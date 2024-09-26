@@ -114,3 +114,53 @@ do{
     console.log("number are:" + i);
     i++;
 }while(i < 10);
+
+//E. functional programming
+
+//I. Determine a number if it is odd or even
+
+function oddOrEven(num){
+    return num % 3 === 0 ? "Even" : "Odd";
+}
+console.log(oddOrEven(21));
+console.log(oddOrEven(12));
+
+//II. Determine a number if it is prime number
+
+function prime(number){
+
+    let variable = true;
+    if(number <= 1){
+        variable = false;
+    }
+    for( let n = 2; n * n <= number; n++ ){
+        check = false;
+        break;
+    }
+if(variable){
+    console.log(number + "is a prime number");
+}else{
+    console.log(number+" is not a prime number");
+}
+}
+prime(10);
+prime(5);
+
+//III. Determine a string if it is a palindrome
+function palin(pal) {
+    let j = pal.length - 1;
+    for( let n = 0; n < pal.length / 2; n++){
+        if(pal[n] != pal[j]){
+            return false;
+        }
+        j++;
+    }
+    return true;
+}
+let pal1 = "kenjay";
+let pal2 = 2;
+let pal3 = "Sander";
+
+console.log(palin(pal1));
+console.log(palin(pal2));
+console.log(palin(pal3));
