@@ -6,7 +6,7 @@ class DataLogger{
         this.logCountElement = document.getElementById(logCountId);
         this.loggedData = [];
 
-        this.logButton = addEventListener('click', () => this.logData());
+        this.logButton.addEventListener('click', () => this.logData());
         this.clearButton.addEventListener('click', () => this.clearLogs());
 
     }
@@ -20,7 +20,7 @@ class DataLogger{
         this.loggedData = []; 
         this.updateCardContainer(); 
     }
-    
+
     updateCardContainer(){
         this.idContainer.innerHTML = '';
 
