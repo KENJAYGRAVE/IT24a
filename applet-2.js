@@ -16,3 +16,4 @@ class leafLetMap{
     }
 
 }
+const Mymap = new leafLetMap('map', [8.359735, 124.869206], 18);
