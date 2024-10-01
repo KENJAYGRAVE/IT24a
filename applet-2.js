@@ -14,8 +14,19 @@ class leafLetMap{
         const marker = L.marker([lat, long]).addTo(this.map)
         .bindPopup(message);
     }
+        loadMarkersFromJson(url) {
+            fetch(url)
+            .then(response => response.json())
+            .then(data => {
+                data.forEach(marker => {
+                    this.addMarker(marker.latitude, marker.longitude, marker.message);
+                });
+            })
+            .catch(error => console.error("Error Loading servers:", error));
+        }
+     
+    }
 
-}
 const Mymap = new leafLetMap('map', [8.359735, 124.869206], 18);
 
 
