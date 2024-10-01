@@ -17,3 +17,8 @@ class leafLetMap{
 
 }
 const Mymap = new leafLetMap('map', [8.359735, 124.869206], 18);
+
+
+Mymap.addMarker(8.359735, 124.869206, 'CCS Faculty Office');
+Mymap.addMarker(8.359639, 124.869179, 'CCS Laboratory 1');
+Mymap.addMarker(8.359554, 124.869153, 'CCS Laboratory 2');
