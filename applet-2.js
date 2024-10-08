@@ -71,6 +71,12 @@ class leafLetMap{
     
             this.updateLogDisplay();
         }
+        displayLogCount() {      
+            this.logCountElement.innerHTML = `SC Building Attendance: ${this.attendanceCountCSS1}`;
+            this.logCount1Element.innerHTML = `BA Building Attendance: ${this.attendanceCountCSS2}`;
+            this.logCount2Element.innerHTML = `CCS Laboratory Attendance: ${this.attendanceCountCSSFACULTY}`;
+       }
+    
      
     }
 
