@@ -96,6 +96,15 @@ class leafLetMap{
         this.attendanceCountSC++;
         this.updateLogDisplay();
     }
+    updateLogDisplay() {
+        this.idContainer.innerHTML = ''; 
+        this.loggedData.forEach(data => {
+            const logItem = document.createElement('div');
+            logItem.className = 'log-item';
+            this.idContainer.appendChild(logItem);
+        });
+        this.displayLogCount();
+    }
 }
 const Mymap = new leafLetMap('map', [8.359735, 124.869206], 18);
 
