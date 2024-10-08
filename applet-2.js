@@ -77,6 +77,11 @@ class leafLetMap{
             this.logCount2Element.innerHTML = `CCS Laboratory Attendance: ${this.attendanceCountCSSFACULTY}`;
        }
     
+       dataSc() {
+        this.addMarker( 8.359639, 124.869179, 'CSS laboratory 1');
+        this.attendanceCountSC++; 
+        this.updateLogDisplay();
+    }
      
     }
 
