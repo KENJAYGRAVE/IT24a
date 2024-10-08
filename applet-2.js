@@ -12,7 +12,14 @@ class leafLetMap{
 
         this.loggedData = []; 
 
-
+        this.btn = document.getElementById('btn');
+        this.btn1 = document.getElementById('btn1');
+        this.btn2 = document.getElementById('btn2');
+        this.btnclear = document.getElementById('btnclear');
+        this.logCountElement = document.getElementById('logCount');
+        this.logCount1Element = document.getElementById('logCountCSS1');
+        this.logCount2Element = document.getElementById('logCountCCS2');
+        this.idContainer = document.getElementById('logContainer');
     }
     
     initTileLayer() {
