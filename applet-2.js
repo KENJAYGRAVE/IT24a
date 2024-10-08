@@ -7,6 +7,11 @@ class leafLetMap{
         this.attendanceCountCSS2 = 0;
         this.attendanceCountCSSFACULTY = 0;
 
+        this.markerCounts = {};
+        this.markers = [];
+
+        this.loggedData = []; 
+
 
     }
     
