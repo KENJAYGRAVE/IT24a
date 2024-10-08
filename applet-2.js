@@ -2,8 +2,14 @@ class leafLetMap{
     constructor(containerId, center, zoom){
         this.map = L.map(containerId).setView(center, zoom);
         this.initTileLayer();
-    }
 
+        this.attendanceCountCSS1 = 0;
+        this.attendanceCountCSS2 = 0;
+        this.attendanceCountCSSFACULTY = 0;
+
+
+    }
+    
     initTileLayer() {
         L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
             maxZoom: 19,
