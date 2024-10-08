@@ -90,6 +90,13 @@ class leafLetMap{
      
     }
 
+    
+    dataCSSfaculty() {
+        this.addMarker(  8.359554,124.869153, 'CSS Faculty');
+        this.attendanceCountSC++;
+        this.updateLogDisplay();
+    }
+}
 const Mymap = new leafLetMap('map', [8.359735, 124.869206], 18);
 
 
