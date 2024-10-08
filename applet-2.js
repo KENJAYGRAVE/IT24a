@@ -34,10 +34,18 @@ class leafLetMap{
             attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors | Sample for new corales BSIT student'
         }).addTo(this.map);
     }
+
     addMarker(lat, long, message){
         const marker = L.marker([lat, long]).addTo(this.map)
         .bindPopup(message);
     }
+
+    
+    updateMarkerPopup(marker, message) {
+        const count = this.markerCounts[message];
+        marker.bindPopup(`${message}<br>Attendance logs: ${count}`).openPopup();
+    }
+    
         loadMarkersFromJson(url) {
             fetch(url)
             .then(response => response.json())
