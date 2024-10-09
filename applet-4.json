@@ -1,19 +1,7 @@
 [
     {
         "student_id": 1,
-        "student_name": "Sander Perejan",
+        "student_name": "Ken Jay Grave",
         "student_program": "BS-Information Technology"
-    },
-
-    {
-        "student_id": 2,
-        "student_name": "Jhonny yes Papa",
-        "student_program": "BS-Financial Management"
-    },
-
-    {
-        "student_id": 3,
-        "student_name": "Son Goku",
-        "student_program": "BS-Computer Engineering"
     }
 ]
