@@ -4,5 +4,8 @@ class StudentList {
         this.students = [];
         this.init();
     }
-
+    async init() {
+        await this.fetchData();
+        this.renderStudentList(this.students); 
+}
 }
