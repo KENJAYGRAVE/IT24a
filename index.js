@@ -27,5 +27,5 @@ filterCards(query) {
 }
 }
 document.addEventListener('DOMContentLoaded', () => {
-    new CardSearch('cardSearch', 'container2');
+    new CardSearch('cardSearch', 'container');
 });
