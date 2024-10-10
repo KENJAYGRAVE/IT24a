@@ -19,9 +19,9 @@ filterCards(query) {
         const text = card.querySelector('.card-text').textContent.toLowerCase();
 
         if (title.includes(searchTerm) || text.includes(searchTerm)) {
-            card.closest('.col-sm-4').style.display = '';
+            card.closest('.col-md-4').style.display = '';
         } else {
-            card.closest('.col-sm-4').style.display = 'none'; 
+            card.closest('.col-md-4').style.display = 'none'; 
         }
     });
 }
